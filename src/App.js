@@ -1,25 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Logo />
+      <Form />
+      <PackingList />
+      <Stats />
     </div>
   );
 }
 
-export default App;
+// COMPONENTS
+
+// logo Component
+function Logo() {
+  return (
+    <header className="logo_warapper">
+      <h1>FAR AWAY</h1>
+    </header>
+  );
+}
+
+// form Component
+function Form() {
+  return (
+    <div className="form_wrapper">
+      <h3>FORM</h3>
+    </div>
+  );
+}
+
+// PackingList Component
+function PackingList() {
+  return (
+    <main className="list_wrapper">
+      <h3>LISTS</h3>
+      <h3>LISTS</h3>
+      <h3>LISTS</h3>
+    </main>
+  );
+}
+
+// Statstic Component
+function Stats() {
+  return (
+    <footer className="footer_wrapper">
+      <p>You have "" items on your lists,and you already packed "".</p>
+    </footer>
+  );
+}
