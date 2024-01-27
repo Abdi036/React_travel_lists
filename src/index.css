@@ -11,9 +11,21 @@
 }
 
 .form_wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   background-color: #c29013;
   padding: 1.6rem;
+}
+.form_wrapper select,
+.inputField,
+.btnAdd {
+  padding: 7px;
+  border: none;
+  border-radius: 2rem;
+  margin-left: 20px;
 }
 
 .list_container {
@@ -36,11 +48,17 @@
 }
 .lists span {
   font-size: 2rem;
+  font-weight: bolder;
   margin-left: 1rem;
+  cursor: pointer;
 }
 
 .footer_wrapper {
   text-align: center;
   background-color: aqua;
   padding: 2rem;
+}
+
+.checkBox {
+  margin: 0 10px;
 }
